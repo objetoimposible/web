@@ -81,8 +81,18 @@ h4,
 h5,
 h6 {
     font-size: 1rem;
+    margin: 0;
+    text-transform: lowercase;
 }
-
+h2{
+    font-weight: bold
+}
+h3{
+    font-size: .7rem;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 .menu {
     font-weight: 300;
 
@@ -118,6 +128,9 @@ a:focus {
         }
     }
 }
+.grid-container-header{
+    padding-top: $pad-section*3;
+}
 
 .fila {
     padding: $pad-section;
@@ -149,6 +162,9 @@ a:focus {
 
 
 /* PADDINGS */
+.pad-top-1 {
+    padding-top: $pad-segment;
+}
 .pad-top-2 {
     padding-top: $pad-segment*2;
 }
