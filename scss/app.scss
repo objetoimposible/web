@@ -1,0 +1,177 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+// Global styles
+@include foundation-global-styles;
+@include foundation-forms;
+@include foundation-typography;
+
+// Grids (choose one)
+@include foundation-xy-grid-classes;
+// @include foundation-grid;
+// @include foundation-flex-grid;
+
+// Generic components
+@include foundation-button;
+@include foundation-button-group;
+@include foundation-close-button;
+@include foundation-label;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-range-input;
+@include foundation-switch;
+@include foundation-table;
+// Basic components
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-dropdown;
+@include foundation-pagination;
+@include foundation-tooltip;
+
+// Containers
+@include foundation-accordion;
+@include foundation-media-object;
+@include foundation-orbit;
+@include foundation-responsive-embed;
+@include foundation-tabs;
+@include foundation-thumbnail;
+// Menu-based containers
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-accordion-menu;
+@include foundation-drilldown-menu;
+@include foundation-dropdown-menu;
+
+// Layout components
+@include foundation-off-canvas;
+@include foundation-reveal;
+@include foundation-sticky;
+@include foundation-title-bar;
+@include foundation-top-bar;
+
+// Helpers
+@include foundation-float-classes;
+@include foundation-flex-classes;
+@include foundation-visibility-classes;
+// @include foundation-prototype-classes;
+
+// Motion UI
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+$pad-section: 21px;
+$pad-segment: 21px;
+$pad-segment-neg: -21px;
+
+/* FRAMEWORK */
+
+h1{
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1rem;
+}
+
+.menu {
+    font-weight: 300;
+
+    a {
+        text-decoration: underline;
+    }
+
+    a:hover,
+    a:focus {
+        text-decoration: none;
+    }
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+/* GRIDS */
+.grid-container-menu {
+    padding: $pad-section $pad-section $pad-section $pad-section/2;
+}
+
+.grid-container-footer {
+    padding: $pad-section*5 $pad-section $pad-section*2 $pad-section/2;
+    .menu{
+        li:last-child{
+            padding-left: $pad-segment*3;
+        }
+    }
+}
+
+.fila {
+    padding: $pad-section;
+}
+
+#fila-2 {
+    margin-top: $pad-segment-neg;
+}
+
+#fila-3 {
+    margin-top: $pad-segment-neg*4;
+}
+
+#fila-4 {
+    margin-top: $pad-segment-neg*4;
+}
+
+#fila-5 {
+    margin-top: $pad-segment-neg;
+}
+
+#fila-7 {
+    margin-top: $pad-segment-neg*7;
+}
+
+#fila-8 {
+    margin-top: $pad-segment-neg*7;
+}
+
+
+/* PADDINGS */
+.pad-top-2 {
+    padding-top: $pad-segment*2;
+}
+.pad-top-4 {
+    padding-top: $pad-segment*4;
+}
+
+.pad-top-5 {
+    padding-top: $pad-segment*5;
+}
+
+.pad-top-6 {
+    padding-top: $pad-segment*6;
+}
+
+.pad-top-7 {
+    padding-top: $pad-segment*6;
+}
+
+.pad-top-10 {
+    padding-top: $pad-segment*10;
+}
+
+.pad-top-12 {
+    padding-top: $pad-segment*12;
+}
