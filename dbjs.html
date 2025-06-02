@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto Imposible</title>
+    <link rel="stylesheet" href="node_modules/simple-lightbox/dist/simpleLightbox.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <div class="grid-container-menu">
+        <div class="grid-x">
+            <div class="small-12 medium-2 cell">
+                <a href="index.html">
+                    <img src="https://placehold.co/600x400/EEE/31343C">
+                </a>
+            </div>
+            <div class="small-12 medium-10 cell text-right">
+                <ul class="menu align-right">
+                    <li><a href="proyectos.html">pry/jcts</a></li>
+                    <li><a href="txts.html">txts</a></li>
+                    <li><a href="dbjs.html">dibj/sktch</a></li>
+                    <li><a href="cv.html">cv</a></li>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dbjs-fila" id="dbjs-fila-1">
+        <div id="macy-container" class="imageGallery1">
+            <a href="https://picsum.photos/500/500">
+                <img src="https://picsum.photos/500/500" alt="">
+            </a>
+            <a href="https://picsum.photos/250/360">
+                <img src="https://picsum.photos/250/360" alt="">
+            </a>
+            <a href="https://picsum.photos/430/300">
+                <img src="https://picsum.photos/430/300" alt="">
+            </a>
+            <a href="https://picsum.photos/350/420">
+                <img src="https://picsum.photos/350/420" alt="">
+            </a>
+            <a href="https://picsum.photos/675/500">
+                <img src="https://picsum.photos/675/500" alt="">
+            </a>
+            <a href="https://picsum.photos/400/600">
+                <img src="https://picsum.photos/400/600" alt="">
+            </a>
+            <a href="https://picsum.photos/382/268">
+                <img src="https://picsum.photos/382/268" alt="">
+            </a>
+            <a href="https://picsum.photos/670/670">
+                <img src="https://picsum.photos/670/670" alt="">
+            </a>
+            <a href="https://picsum.photos/802/558">
+                <img src="https://picsum.photos/802/558" alt="">
+            </a>
+            <a href="https://picsum.photos/390/360">
+                <img src="https://picsum.photos/390/360" alt="">
+            </a>
+            <a href="https://picsum.photos/450/600">
+                <img src="https://picsum.photos/450/600" alt="">
+            </a>
+            <a href="https://picsum.photos/250/400">
+                <img src="https://picsum.photos/250/400" alt="">
+            </a>
+            <a href="https://picsum.photos/382/268">
+                <img src="https://picsum.photos/382/268" alt="">
+            </a>
+            <a href="https://picsum.photos/710/600">
+                <img src="https://picsum.photos/710/600" alt="">
+            </a>
+            <a href="https://picsum.photos/382/268">
+                <img src="https://picsum.photos/382/268" alt="">
+            </a>
+            <a href="https://picsum.photos/500/330">
+                <img src="https://picsum.photos/500/330" alt="">
+            </a>
+        </div>
+    </div>
+
+
+    <div class="grid-container-footer">
+        <div class="grid-x align-middle">
+            <div class="small-12 medium-4 cell">
+                <h1>
+                    <a href="/">Oficina<br /> Objeto<br /> Imposible</a>
+                </h1>
+            </div>
+            <div class="small-12 medium-4 cell text-center">
+                <h2>Temuco
+                    <a href="https://www.google.com/maps/place/38%C2%B044'02.4%22S+72%C2%B034'47.9%22W/@-38.734,-72.5799722,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-38.734!4d-72.5799722?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank">'02.4"S 72°34'47.9"W</a>
+                </h2>
+            </div>
+            <div class="small-12 medium-4 cell text-right">
+                <ul class="menu align-right">
+                    <li><a href="https://instagram.com/objetoimposible" target="_blank">instagram</a></li>
+                    <li class="pad-top-2"><a href="mailto:oficinaobjetoimposible@gmail.com" target="_blank">email</a>
+                    </li>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/what-input/dist/what-input.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+    <script src="node_modules/macy/dist/macy.js"></script>
+    <script src="node_modules/simple-lightbox/dist/simpleLightbox.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        var macy = Macy({
+            container: '#macy-container',
+            trueOrder: false,
+            waitForImages: false,
+            margin: 24,
+            columns: 6,
+            breakAt: {
+                1200: 5,
+                940: 3,
+                520: 2,
+                400: 1
+            }
+        });
+        $('.imageGallery1 a').simpleLightbox();
+    </script>
+</body>
+
+</html>

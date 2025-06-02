@@ -18,18 +18,22 @@
   },
   "dependencies": {
     "foundation-sites": "latest",
+    "gsap": "^3.13.0",
     "jquery": ">=3.6.0",
+    "macy": "^2.5.1",
+    "masonry-layout": "^4.2.2",
     "motion-ui": "latest",
+    "simple-lightbox": "^2.1.0",
     "what-input": ">=5.2.10"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.15",
-    "browser-sync": "^2.29.3",
-    "gulp": "^4.0.0",
+    "browser-sync": "^3.0.4",
+    "gulp": "^5.0.1",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^10.0.0",
     "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.5",
     "postcss": "^8.4.28",
     "sass-embedded": "^1.79.3"
   },

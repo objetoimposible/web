@@ -70,7 +70,16 @@ $pad-segment-neg: -21px;
 
 /* FRAMEWORK */
 
-h1{
+body {
+    overflow-x: hidden;
+}
+
+hr {
+    max-width: 50px;
+    margin: 0 0 10px;
+}
+
+h1 {
     font-weight: 600;
 }
 
@@ -84,15 +93,18 @@ h6 {
     margin: 0;
     text-transform: lowercase;
 }
-h2{
+
+h2 {
     font-weight: bold
 }
-h3{
+
+h3 {
     font-size: .7rem;
     color: black;
     text-transform: uppercase;
     font-weight: bold;
 }
+
 .menu {
     font-weight: 300;
 
@@ -122,72 +134,135 @@ a:focus {
 
 .grid-container-footer {
     padding: $pad-section*5 $pad-section $pad-section*2 $pad-section/2;
-    .menu{
-        li:last-child{
+
+    .menu {
+        li:last-child {
             padding-left: $pad-segment*3;
         }
     }
 }
-.grid-container-header{
+
+.grid-container-header {
     padding-top: $pad-section*3;
 }
 
-.fila {
-    padding: $pad-section;
+.project-fila {
+    padding: $pad-section*3 $pad-section 0;
 }
 
-#fila-2 {
-    margin-top: $pad-segment-neg;
+.txt-fila {
+    padding: $pad-section*3 $pad-section 0;
 }
 
-#fila-3 {
-    margin-top: $pad-segment-neg*4;
+.dbjs-fila {
+    padding: $pad-section*3 $pad-section 0;
 }
 
-#fila-4 {
-    margin-top: $pad-segment-neg*4;
+.cv-fila {
+    padding: $pad-section*3 $pad-section 0;
+
+    p {
+        font-size: .8rem;
+    }
 }
 
-#fila-5 {
-    margin-top: $pad-segment-neg;
-}
+#macy-container {
 
-#fila-7 {
-    margin-top: $pad-segment-neg*7;
-}
-
-#fila-8 {
-    margin-top: $pad-segment-neg*7;
+    a:hover,
+    a:focus {
+        img {
+            cursor: zoom-in;
+        }
+    }
 }
 
 
-/* PADDINGS */
-.pad-top-1 {
-    padding-top: $pad-segment;
-}
-.pad-top-2 {
-    padding-top: $pad-segment*2;
-}
-.pad-top-4 {
-    padding-top: $pad-segment*4;
+.footprint-proyecto {
+    padding: $pad-section 0;
+
+    h2,
+    p {
+        font-size: .7rem;
+    }
 }
 
-.pad-top-5 {
-    padding-top: $pad-segment*5;
+
+/* MASONRY para dibujos */
+
+.grid-item {
+    float: left;
+    width: 10%;
+    border: 2px solid hsla(0, 0%, 0%, 0.5);
 }
 
-.pad-top-6 {
-    padding-top: $pad-segment*6;
+.grid-item--width2 {
+    width: 20%;
 }
 
-.pad-top-7 {
-    padding-top: $pad-segment*6;
-}
+@include breakpoint(medium) {
+    .fila {
+        padding: $pad-section;
+    }
 
-.pad-top-10 {
-    padding-top: $pad-segment*10;
-}
+    #fila-2 {
+        margin-top: $pad-segment-neg;
+    }
 
-.pad-top-12 {
-    padding-top: $pad-segment*12;
+    #fila-3 {
+        margin-top: $pad-segment-neg*4;
+    }
+
+    #fila-4 {
+        margin-top: $pad-segment-neg*4;
+    }
+
+    #fila-5 {
+        margin-top: $pad-segment-neg;
+    }
+
+    #fila-7 {
+        margin-top: $pad-segment-neg*7;
+    }
+
+    #fila-8 {
+        margin-top: $pad-segment-neg*7;
+    }
+
+
+    /* PADDINGS */
+    .pad-top-1 {
+        padding-top: $pad-segment;
+    }
+
+    .pad-top-2 {
+        padding-top: $pad-segment*2;
+    }
+
+    .pad-top-3 {
+        padding-top: $pad-segment*3;
+    }
+
+    .pad-top-4 {
+        padding-top: $pad-segment*4;
+    }
+
+    .pad-top-5 {
+        padding-top: $pad-segment*5;
+    }
+
+    .pad-top-6 {
+        padding-top: $pad-segment*6;
+    }
+
+    .pad-top-7 {
+        padding-top: $pad-segment*6;
+    }
+
+    .pad-top-10 {
+        padding-top: $pad-segment*10;
+    }
+
+    .pad-top-12 {
+        padding-top: $pad-segment*12;
+    }
 }
