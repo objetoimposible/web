@@ -149,7 +149,9 @@ a:focus {
 #grid-container-footer-cv {
     position: relative;
 }
-
+#grid-container-filas{
+    padding-bottom: $pad-section*7;
+}
 .grid-container-header {
     padding-top: $pad-section*3;
 }
