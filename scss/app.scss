@@ -213,7 +213,7 @@ a:focus {
     width: 20%;
 }
 
-@include breakpoint(small) {
+@include breakpoint(small only) {
     .grid-container-menu {
         padding: $pad-section $pad-section $pad-section $pad-section/2;
 
