@@ -149,9 +149,11 @@ a:focus {
 #grid-container-footer-cv {
     position: relative;
 }
-#grid-container-filas{
+
+#grid-container-filas {
     padding-bottom: $pad-section*7;
 }
+
 .grid-container-header {
     padding-top: $pad-section*3;
 }
@@ -178,7 +180,7 @@ a:focus {
 
 #cv-fila-1 {
     margin: 0;
-    max-width: 75%;
+    max-width: 85%;
     padding: $pad-section*5 $pad-section $pad-section*2 $pad-section/2;
 }
 
@@ -217,24 +219,39 @@ a:focus {
 
 @include breakpoint(small only) {
     .grid-container-menu {
+        z-index: 20;
+        padding: $pad-section;
         .menu {
             justify-content: space-around;
-            li a{
-                padding-right: 0;
-            }
         }
     }
-    .grid-container-footer{
+
+    .grid-container-footer {
         padding: 0 $pad-section;
         bottom: $pad-section/2;
-        *{
+        .menu a{
+            padding: 0 0 5px;
+        }
+
+        * {
             font-size: .8rem;
         }
     }
-    .item-drag{
-        margin: 10px;
-        z-index: 10;
+
+    #grid-container-drag {
+        padding: 10px;
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: white;
+
+        .item-drag {
+            position: absolute;
+            padding: 10px;
+            z-index: 10;
+        }
     }
+
 
 }
 
@@ -310,8 +327,20 @@ a:focus {
     }
 }
 
-@media screen and (min-width: 90em) and (max-width:  10000em) {
+@media screen and (min-width: 90em) and (max-width: 10000em) {
     html {
-      zoom: 175%;
-   }
+        zoom: 175%;
+    }
+}
+
+/* PLUGINS */
+
+.slbCloseBtn, .slbArrows button:before {
+  color: rgba(255, 255, 255, 0.2);
+  opacity: 1;
+  transition: all .2s ease-in-out;
+}
+.slbCloseBtn:hover, .slbCloseBtn:focus{
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
 }
