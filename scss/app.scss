@@ -220,7 +220,7 @@ a:focus {
 @include breakpoint(small only) {
     .grid-container-menu {
         z-index: 20;
-        padding: $pad-section;
+        padding: $pad-section/2 $pad-section $pad-section;
         .menu {
             justify-content: space-around;
         }
@@ -247,7 +247,7 @@ a:focus {
 
         .item-drag {
             position: absolute;
-            padding: 10px;
+            padding: $pad-section*1.5 $pad-section/2 $pad-section;
             z-index: 10;
         }
     }
