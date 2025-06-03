@@ -135,11 +135,19 @@ a:focus {
 .grid-container-footer {
     padding: $pad-section*5 $pad-section $pad-section*2 $pad-section/2;
 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
     .menu {
         li:last-child {
             padding-left: $pad-segment*3;
         }
     }
+}
+
+#grid-container-footer-cv {
+    position: relative;
 }
 
 .grid-container-header {
@@ -151,11 +159,11 @@ a:focus {
 }
 
 .txt-fila {
-    padding: $pad-section*3 $pad-section 0;
+    padding: $pad-section*3 $pad-section $pad-section*6 $pad-section;
 }
 
 .dbjs-fila {
-    padding: $pad-section*3 $pad-section 0;
+    padding: $pad-section*3 $pad-section $pad-section*6 $pad-section;
 }
 
 .cv-fila {
@@ -164,6 +172,12 @@ a:focus {
     p {
         font-size: .8rem;
     }
+}
+
+#cv-fila-1 {
+    margin: 0;
+    max-width: 75%;
+    padding: $pad-section*5 $pad-section $pad-section*2 $pad-section/2;
 }
 
 #macy-container {
@@ -197,6 +211,22 @@ a:focus {
 
 .grid-item--width2 {
     width: 20%;
+}
+
+@include breakpoint(small) {
+    .grid-container-menu {
+        padding: $pad-section $pad-section $pad-section $pad-section/2;
+
+        .menu {
+            justify-content: space-around;
+        }
+    }
+    .grid-container-footer{
+        *{
+            display: inline-block;
+        }
+    }
+
 }
 
 @include breakpoint(medium) {
@@ -255,7 +285,11 @@ a:focus {
     }
 
     .pad-top-7 {
-        padding-top: $pad-segment*6;
+        padding-top: $pad-segment*7;
+    }
+
+    .pad-top-8 {
+        padding-top: $pad-segment*8;
     }
 
     .pad-top-10 {

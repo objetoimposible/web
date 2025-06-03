@@ -32,8 +32,7 @@
     <div class="cv-fila grid-container" id="cv-fila-1">
         <div class="grid-x grid-margin-x">
             <div class="small-12 cell">
-                <h2>Objeto Imposible</h2>
-                <p>Temuco, Chile</p>
+                <p>Temuco, sur de Chile</p>
                 <p><small><a href="mailto:oficina@objetoimposible.cl">oficina@objetoimposible.cl</a></small></p>
                 <hr />
                 <p><small><a href="">CV completo (ESPAÑOL)</a></small>
@@ -86,7 +85,7 @@
         </div>
     </div>
 
-    <div class="grid-container-footer">
+    <div class="grid-container-footer" id="grid-container-footer-cv">
         <div class="grid-x align-middle">
             <div class="small-12 medium-4 cell">
                 <h1>
@@ -114,6 +113,19 @@
     <script src="node_modules/what-input/dist/what-input.js"></script>
     <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
     <script src="js/app.js"></script>
+     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+ <!-- smooth scroll -->
+  <script>
+    const lenis = new Lenis()
+    lenis.on('scroll', (e) => {
+      console.log(e)
+    })
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+  </script>
 </body>
 
 </html>
