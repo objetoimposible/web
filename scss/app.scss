@@ -300,3 +300,9 @@ a:focus {
         padding-top: $pad-segment*12;
     }
 }
+
+@media screen and (min-width: 90em) and (max-width:  10000em) {
+    html {
+      zoom: 175%;
+   }
+}
