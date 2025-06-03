@@ -11,17 +11,21 @@
 
 <body>
 
-  <iframe title="vimeo-player" src="https://player.vimeo.com/video/1089943478?h=d95a4733a4" width="640" height="360" frameborder="0" style="min-width: 100vw;
+  <!-- <iframe title="vimeo-player" src="https://player.vimeo.com/video/1089943478?h=d95a4733a4" width="640" height="360" frameborder="0" style="min-width: 100vw;
   min-height: 100vh;
   z-index: 10;
   position: relative;
-  background: black;" allowfullscreen></iframe>
+  background: black;" allowfullscreen></iframe> -->
 
-  <div class="grid-container-menu">
+  <div id="draggable" class="ui-widget-content item-drag show-for-small-only">
+  <a href="cv.html"><img src="https://placehold.co/180x180/00FF00/31343C"></a>
+</div>
+
+  <div class="grid-container-menu show-for-medium">
     <div class="grid-x">
       <div class="small-12 medium-2 cell">
         <a href="index.html">
-          <img src="https://placehold.co/600x400/EEE/31343C">
+          <img src="https://placehold.co/600x400/FF0000/31343C">
         </a>
       </div>
       <div class="small-12 medium-10 cell text-right">
@@ -35,7 +39,7 @@
   </div>
 
 
-  <div class="fila" id="fila-1">
+  <div class="fila show-for-medium" id="fila-1">
     <div class="grid-container">
       <div class="grid-x">
         <div class="small-12 medium-4 medium-offset-1 cell">
@@ -52,7 +56,7 @@
     </div>
   </div>
 
-  <div class="fila" id="fila-2">
+  <div class="fila show-for-medium" id="fila-2">
     <div class="grid-container">
       <div class="grid-x">
         <div class="small-12 medium-3 medium-offset-3 cell">
@@ -69,7 +73,7 @@
     </div>
   </div>
 
-  <div class="fila" id="fila-3">
+  <div class="fila show-for-medium" id="fila-3">
     <div class="grid-container">
       <div class="grid-x">
         <div class="small-12 medium-4 medium-offset-0 cell">
@@ -87,7 +91,7 @@
     </div>
   </div>
 
-  <div class="fila" id="fila-4">
+  <div class="fila show-for-medium" id="fila-4">
     <div class="grid-container">
       <div class="grid-x">
         <div class="small-12 medium-4 medium-offset-8 cell">
@@ -99,7 +103,7 @@
     </div>
   </div>
 
-  <div class="fila" id="fila-5">
+  <div class="fila show-for-medium" id="fila-5">
     <div class="grid-container">
       <div class="grid-x">
         <div class="small-12 medium-4 medium-offset-1 cell">
@@ -116,7 +120,7 @@
     </div>
   </div>
 
-  <div class="fila" id="fila-6">
+  <div class="fila show-for-medium" id="fila-6">
     <div class="grid-container">
       <div class="grid-x">
         <div class="small-12 medium-4 medium-offset-0 cell">
@@ -133,7 +137,7 @@
     </div>
   </div>
 
-  <div class="fila" id="fila-7">
+  <div class="fila show-for-medium" id="fila-7">
     <div class="grid-container">
       <div class="grid-x grid-margin-x">
         <div class="small-12 medium-4 medium-offset-3 cell">
@@ -145,7 +149,7 @@
     </div>
   </div>
 
-  <div class="fila" id="fila-8">
+  <div class="fila show-for-medium  " id="fila-8">
     <div class="grid-container">
       <div class="grid-x grid-margin-x">
         <div class="small-12 medium-4 medium-offset-0 cell">
@@ -164,18 +168,18 @@
 
   <div class="grid-container-footer">
     <div class="grid-x align-middle">
-      <div class="small-12 medium-4 cell">
+      <div class="small-4 medium-4 cell">
         <h1>
           <a href="/">Oficina<br /> Objeto<br /> Imposible</a>
         </h1>
       </div>
-      <div class="small-12 medium-4 cell text-center">
+      <div class="small-4 medium-4 cell text-center">
         <h2>Temuco
           <a href="https://www.google.com/maps/place/38%C2%B044'02.4%22S+72%C2%B034'47.9%22W/@-38.734,-72.5799722,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-38.734!4d-72.5799722?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D"
             target="_blank">'02.4"S 72°34'47.9"W</a>
         </h2>
       </div>
-      <div class="small-12 medium-4 cell text-right">
+      <div class="small-4 medium-4 cell text-right">
         <ul class="menu align-right">
           <li><a href="https://instagram.com/objetoimposible" target="_blank">instagram</a></li>
           <li class="pad-top-2"><a href="mailto:oficinaobjetoimposible@gmail.com" target="_blank">email</a></li>
@@ -189,6 +193,7 @@
   <script src="node_modules/what-input/dist/what-input.js"></script>
   <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
   <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
  <!-- smooth scroll -->
   <script>
@@ -201,6 +206,11 @@
       requestAnimationFrame(raf)
     }
     requestAnimationFrame(raf)
+  </script>
+    <script>
+  $( function() {
+    $( ".item-drag" ).draggable();
+  } );
   </script>
 </body>
 

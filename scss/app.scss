@@ -133,7 +133,7 @@ a:focus {
 }
 
 .grid-container-footer {
-    padding: $pad-section*5 $pad-section $pad-section*2 $pad-section/2;
+    padding: $pad-section*5 $pad-section $pad-section*2 $pad-section;
 
     position: fixed;
     bottom: 0;
@@ -155,7 +155,7 @@ a:focus {
 }
 
 .project-fila {
-    padding: $pad-section*3 $pad-section 0;
+    padding: $pad-section*3 $pad-section $pad-section*6 $pad-section;
 }
 
 .txt-fila {
@@ -215,16 +215,23 @@ a:focus {
 
 @include breakpoint(small only) {
     .grid-container-menu {
-        padding: $pad-section $pad-section $pad-section $pad-section/2;
-
         .menu {
             justify-content: space-around;
+            li a{
+                padding-right: 0;
+            }
         }
     }
     .grid-container-footer{
+        padding: 0 $pad-section;
+        bottom: $pad-section/2;
         *{
-            display: inline-block;
+            font-size: .8rem;
         }
+    }
+    .item-drag{
+        margin: 10px;
+        z-index: 10;
     }
 
 }
