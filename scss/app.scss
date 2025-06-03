@@ -75,8 +75,9 @@ body {
 }
 
 hr {
-    max-width: 50px;
+    max-width: 30px;
     margin: 0 0 10px;
+    border-bottom-color: black;
 }
 
 h1 {
@@ -147,7 +148,8 @@ a:focus {
 }
 
 #grid-container-footer-cv {
-    position: relative;
+   z-index: 10;
+  position: relative;
 }
 
 #grid-container-filas {
@@ -182,6 +184,12 @@ a:focus {
     margin: 0;
     max-width: 85%;
     padding: $pad-section*5 $pad-section $pad-section*2 $pad-section/2;
+    z-index: 10;
+  position: relative;
+}
+
+.video-background{
+  position: fixed !important;
 }
 
 #macy-container {

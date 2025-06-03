@@ -106,11 +106,13 @@
     </div>
   </div>
 
+    <div data-vbg="https://www.youtube.com/watch?v=ycV_w0O36PQ"></div>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/what-input/dist/what-input.js"></script>
     <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/youtube-background/jquery.youtube-background.js"></script>
      <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
  <!-- smooth scroll -->
   <script>
@@ -123,6 +125,11 @@
       requestAnimationFrame(raf)
     }
     requestAnimationFrame(raf)
+  </script>
+  <script>
+        jQuery(document).ready(function() {
+        jQuery('[data-vbg]').youtube_background();
+    });
   </script>
 </body>
 
