@@ -131,6 +131,8 @@ a:focus {
 /* GRIDS */
 .grid-container-menu {
     padding: $pad-section $pad-section $pad-section $pad-section/2;
+    position: relative;
+  z-index: 1;
 }
 
 .grid-container-footer {
@@ -211,7 +213,12 @@ a:focus {
         font-size: .7rem;
     }
 }
-
+.video-background{
+filter: blur(5px);
+-webkit-filter: blur(5px);
+-moz-filter: blur(5px);
+scale: 1.1;
+}
 
 /* MASONRY para dibujos */
 
